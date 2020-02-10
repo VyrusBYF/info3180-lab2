@@ -7,8 +7,9 @@ This file creates your application.
 
 from app import app
 from flask import render_template, request, redirect, url_for, flash
+from datetime import *
 
-
+dateJoined = "2020-02-09"
 ###
 # Routing for your application.
 ###
@@ -58,6 +59,11 @@ def add_header(response):
 def page_not_found(error):
     """Custom 404 page."""
     return render_template('404.html'), 404
+
+def format_date_joined(dateJoined):
+    return "Joined " + datetime.strptime(dateJoined,'%Y-%m-%d').strftime('%B, %Y')
+    
+    
 
 
 if __name__ == '__main__':
