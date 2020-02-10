@@ -11,10 +11,11 @@
 
 .grid2{
 	display: grid;
-	grid-template: 100% / 30% 30% 30%;
+	height: 80px;
+	grid-template: 30% 50% / 30% 30% 30%;
 	border:1px solid black;
-	grid-column-gap: 0px;
-	grid-gap: 0px;
+	vertical-align: bottom;
+	text-align: center;
 }
 
 img{
@@ -72,12 +73,11 @@ img{
 	color: #636e72;
 	font-size: 18px;
 	font-family: "Calibri";
-	vertical-align: text-bottom;
-	text-align: center;
 }
 
-#stats h4{
-	border: 1px solid black;
+#stats div{
+	margin-left: 25px;
+	margin-top: 20px;
 }
 
 /*------------------------------------------------------------*/
