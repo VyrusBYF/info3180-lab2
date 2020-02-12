@@ -28,7 +28,7 @@ def about():
 @app.route('/profile/')
 def profile():
     """Render website's profile page."""
-    return render_template('profile.html')
+    return render_template('profile.html',date=format_date_joined(dateJoined))
     
 
 
